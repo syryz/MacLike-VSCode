@@ -1,6 +1,6 @@
 html:has(div.chromium[role="application"]) {
   color-scheme: light dark;
-  background-color: light-dark(#ffffff00, #00000000) !important;
+  background-color: light-dark(var(--main-app-bg_light), var(--main-app-bg_dark));
   --left-side-width: 50%;
   --right-side-width: 50%;
   --activitybar-width: 48px;
