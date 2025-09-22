@@ -1,0 +1,39 @@
+.tab {
+  --tab-radius: 10px;
+  border-right: 0px solid transparent !important;
+  &:hover {
+    border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+  }
+}
+.tab.selected.active {
+  position: relative !important;
+  overflow: visible !important;
+  border-radius: var(--tab-radius) var(--tab-radius) 0 0;
+  z-index: 100 !important;
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: calc(100% - var(--tab-radius));
+    width: calc(100% - var(--tab-radius));
+    pointer-events: none;
+    z-index: -1;
+  }
+  &::before {
+    left: calc(-100% + var(--tab-radius));
+    border-radius: 0 0 var(--tab-radius) 0;
+    box-shadow: var(--tab-radius) 0 0 0 var(--vscode-tab-activeBackground);
+  }
+  &::after {
+    left: 100%;
+    border-radius: 0 0 0 var(--tab-radius);
+    box-shadow: calc(var(--tab-radius) * -1) 0 0 0 var(--vscode-tab-activeBackground);
+  }
+  & .tab-border-top-container {
+    display: none !important;
+  }
+}
+.tabs-and-actions-container.tabs-border-bottom:after {
+  display: none !important;
+}
