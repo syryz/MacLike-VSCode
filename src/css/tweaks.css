@@ -1,0 +1,104 @@
+/* Cursor */
+.monaco-editor .cursor {
+  border-radius: 50px !important;
+}
+/* Buttons */
+.monaco-button {
+  border-radius: 6px !important;
+}
+
+/* Scrollbar Slider */
+.vertical.scrollbar > .slider {
+  border-radius: 4px !important;
+  width: 6px !important;
+  left: 4px !important;
+}
+.horizontal.scrollbar > .slider {
+  border-radius: 4px !important;
+  height: 6px !important;
+  top: 4px !important;
+}
+/* Notifications */
+.notifications-center, .notification-toast {
+  box-shadow: none !important;
+  box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 0 1.5px rgba(255, 255, 255, 0.15) !important;
+}
+.monaco-list[class*="list_id_"] .monaco-list-rows {
+  background: transparent !important;
+}
+/* Sticky Scroll */
+.monaco-editor .sticky-widget {
+  background-color: transparent;
+  box-shadow: transparent;
+  right: auto !important;
+  width: 100%;
+  z-index: 4;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(#1c1c1c, #1c1c1c5e);
+  border-color: #2b2d30;
+}
+/* Scrollable Menu */
+.context-view-block {
+  pointer-events: none !important;
+}
+/* Translucent Margin*/
+.monaco-editor {
+  .margin {
+    z-index: 100 !important;
+    background: color-mix(in srgb, var(--vscode-editor-background) 50%, transparent 50%) !important;
+    backdrop-filter: blur(120px) !important;
+  }
+  .monaco-scrollable-element.editor-scrollable, .lines-content {
+    overflow: visible !important;
+  }
+}
+
+/* Command Palette */
+#command-blur {
+  display: none !important;
+}
+.command-center-center {
+  width: 15vh !important;
+}
+.quick-input-widget {
+  background: rgba(var(--vscode-editorWidget-background-rgb), 0.85) !important;
+  backdrop-filter: blur(120px) saturate(180%) !important;
+  border-radius: 8px !important;
+  transform: translate(-50%, 0%) !important;
+  top: 30% !important;
+  left: calc(50% + var(--left-side-width) / 2) !important;
+  position: fixed !important;
+  box-shadow: none !important;
+  border: solid 1px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.5), inset 0 0 0 1.5px rgba(255, 255, 255, 0.15) !important;
+  &:has(.quick-input-list > #quickInput_list.element-focused[aria-label="Type the name of a command to run."]) .monaco-inputbox {
+    &::after {
+      content: "CMD" !important;
+      cursor: pointer !important;
+      position: absolute !important;
+      background: light-dark(#c2c2c290, #3c3c3c90) !important;
+      top: 4px !important;
+      left: 3px !important;
+      border-radius: 4px !important;
+      z-index: 9999 !important;
+      padding-left: 0.3em !important;
+      padding-right: 0.3em !important;
+    }
+    & input {
+      margin-left: 2em !important;
+      width: calc(100% - 2em) !important;
+      clip-path: inset(0 0 0 1em);
+    }
+  }
+  & .monaco-inputbox {
+    outline: none !important;
+  }
+}
+.quick-input-list {
+  background: transparent !important;
+}
+.quick-input-widget .monaco-inputbox {
+  background: rgba(var(--vscode-input-background-rgb), 0.7) !important;
+  border-radius: 0px !important;
+  border: none !important;
+}
