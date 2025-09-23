@@ -1,6 +1,6 @@
 # MacLike Visual Studio Code Theme
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)   ![Requires Custom UI Style](https://img.shields.io/badge/Requires-Custom%20UI%20Style-yellow)   [![Discord](https://img.shields.io/badge/Discord-WAM_Project-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/yourinvitecode)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)   ![Requires Custom UI Style](https://img.shields.io/badge/Requires-Custom%20UI%20Style-yellow)   [![Discord](https://img.shields.io/badge/Discord-WAM_Project-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/MyxaEQxjFT)
 
 A clean, minimalist Visual Studio Code theme aiming to create a more native, macOS-like experience.
 
