@@ -1,6 +1,6 @@
 # MacLike Visual Studio Code Theme
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)   ![Requires Custom UI Style](https://img.shields.io/badge/Requires-Custom%20UI%20Style-yellow)   [![Discord](https://img.shields.io/badge/Discord-WAM_Project-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/MyxaEQxjFT)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)   ![Requires Custom UI Style](https://img.shields.io/badge/Requires-Custom%20UI%20Style-yellow)   [![Discord](https://img.shields.io/badge/Discord-WAM_Project-5865F2?style=flat&logo=discord&logoColor=white)](https://discord.gg/MyxaEQxjFT)   ![Supports Cursor IDE](https://img.shields.io/badge/Supports-Cursor_IDE-28a745)
 
 A clean, minimalist Visual Studio Code theme aiming to create a more native, macOS-like experience.
 
@@ -21,7 +21,7 @@ A clean, minimalist Visual Studio Code theme aiming to create a more native, mac
 
 [Custom UI Style Extension](https://marketplace.visualstudio.com/items?itemName=subframe7536.custom-ui-style) is required.
 
-**External Loading**: Quicker, but requires Internet connection
+**External Loading**: Quicker, but requires Internet connection and can break on updates (not recommended).
 1.  Install Custom UI Style.
 2.  Open your `settings.json` (can be opened by opening Command Palette `Ctrl/Cmd+Shift+P`)
 3. Add the following to settings
@@ -32,7 +32,7 @@ A clean, minimalist Visual Studio Code theme aiming to create a more native, mac
     "https://raw.githubusercontent.com/syryz/MacLike-VSCode/refs/heads/main/src/css/maclike.css",
     // EXPERIMENTAL TABS - comment out if unwanted
     "https://raw.githubusercontent.com/syryz/MacLike-VSCode/refs/heads/main/src/css/tabs.css",
-    // my personal changes -comment out if unwanted
+    // my personal changes - comment out if unwanted
     "https://raw.githubusercontent.com/syryz/MacLike-VSCode/refs/heads/main/src/css/tweaks.css",    
   ],
   "custom-ui-style.electron": {
@@ -41,6 +41,7 @@ A clean, minimalist Visual Studio Code theme aiming to create a more native, mac
     "titleBarStyle": "hidden",
     "backgroundColor": "#00000000",
     "vibrancy": "fullscreen-ui",
+    "--window-button-size": "12px",
   },
   "custom-ui-style.stylesheet": {
     ":root": {
@@ -97,7 +98,7 @@ Choose option 1, option 2, or both!
 - [ ] **Animations**: Replicate macOS-style UI animations and transitions
 
 ### Known Issues
-- Bugs WANTED
+- Layout broken when `WorkBench > Activity Bar: Orientation` is set to `horizontal`
 
 ### Credits
 - Inspiration from macOS apps
