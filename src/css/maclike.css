@@ -17,7 +17,7 @@ iframe {
 }
 
 /* Sidebar CSS */
-.monaco-scrollable-element > .split-view-container, .monaco-workbench {
+body, .monaco-scrollable-element > .split-view-container, .monaco-workbench {
   background-color: transparent !important;
 }
 
