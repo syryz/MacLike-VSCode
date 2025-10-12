@@ -26,6 +26,7 @@ A clean, minimalist Visual Studio Code theme aiming to create a more native, mac
 2.  Open your `settings.json` (can be opened by opening Command Palette `Ctrl/Cmd+Shift+P`)
 3. Add the following to settings
 ```json
+  "window.controlsStyle": "custom",
   "custom-ui-style.external.imports": [
     // main files
     "https://raw.githubusercontent.com/syryz/MacLike-VSCode/refs/heads/main/src/main.js",
