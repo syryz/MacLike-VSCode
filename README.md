@@ -90,7 +90,7 @@ Choose option 1, option 2, or both!
 1. Install [MicaForEveryone](https://github.com/MicaForEveryone/MicaForEveryone).
 2. Add new rule > Add process rule.
 3. Enter `Code`.
-4. Set the Backdrop Type to `Acrylic` and switch on `Extend frame into client area` and `Enable blur behind`.
+4. Set the Backdrop Type to `Acrylic` and toggle on `Enable blur behind`. If transparency is still not visible, toggle on `Extend frame into client area`.
 5. Restart VSCode
 
 ---
